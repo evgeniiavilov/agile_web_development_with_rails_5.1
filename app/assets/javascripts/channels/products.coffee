@@ -6,4 +6,4 @@ App.products = App.cable.subscriptions.create "ProductsChannel",
     # Called when the subscription has been terminated by the server
 
   received: (data) ->
-    document.getElementsByTagName("main")[0].innerHTML = data.html
+    document.getElementByTagName("main")[0].innerHTML = data.html
