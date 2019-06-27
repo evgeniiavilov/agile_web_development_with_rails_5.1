@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  aftef_destroy :ensure_an_admin_remains
+  after_destroy :ensure_an_admin_remains
 
   class Error < StandardError
   end
